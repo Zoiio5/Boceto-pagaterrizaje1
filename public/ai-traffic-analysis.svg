@@ -1,0 +1,138 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con gradiente -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f8fa" />
+      <stop offset="100%" stop-color="#e8f4f8" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" />
+      <feOffset dx="0" dy="10" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="800" height="600" fill="url(#bgGradient)" />
+  
+  <!-- Mapa urbano estilizado -->
+  <g id="cityMap">
+    <!-- Calles principales -->
+    <path d="M100,100 L700,100 M100,200 L700,200 M100,300 L700,300 M100,400 L700,400 M100,500 L700,500 
+             M100,100 L100,500 M200,100 L200,500 M300,100 L300,500 M400,100 L400,500 M500,100 L500,500 M600,100 L600,500 M700,100 L700,500" 
+          stroke="#ddd" stroke-width="15" />
+    <path d="M100,100 L700,100 M100,200 L700,200 M100,300 L700,300 M100,400 L700,400 M100,500 L700,500 
+             M100,100 L100,500 M200,100 L200,500 M300,100 L300,500 M400,100 L400,500 M500,100 L500,500 M600,100 L600,500 M700,100 L700,500" 
+          stroke="#f8f8f8" stroke-width="10" />
+  </g>
+  
+  <!-- Círculos que representan puntos de análisis de IA -->
+  <g id="scanPoints">
+    <circle cx="200" cy="200" r="35" fill="#3366cc" opacity="0.2" />
+    <circle cx="200" cy="200" r="20" fill="#3366cc" opacity="0.3" />
+    <circle cx="200" cy="200" r="10" fill="#3366cc" opacity="0.5" />
+    
+    <circle cx="500" cy="400" r="35" fill="#33cc99" opacity="0.2" />
+    <circle cx="500" cy="400" r="20" fill="#33cc99" opacity="0.3" />
+    <circle cx="500" cy="400" r="10" fill="#33cc99" opacity="0.5" />
+    
+    <circle cx="600" cy="200" r="35" fill="#ff6600" opacity="0.2" />
+    <circle cx="600" cy="200" r="20" fill="#ff6600" opacity="0.3" />
+    <circle cx="600" cy="200" r="10" fill="#ff6600" opacity="0.5" />
+    
+    <circle cx="300" cy="400" r="35" fill="#3366cc" opacity="0.2" />
+    <circle cx="300" cy="400" r="20" fill="#3366cc" opacity="0.3" />
+    <circle cx="300" cy="400" r="10" fill="#3366cc" opacity="0.5" />
+  </g>
+  
+  <!-- Vehículos en movimiento -->
+  <g id="vehicles">
+    <!-- Autos -->
+    <rect x="180" y="150" width="30" height="15" rx="3" fill="#3f51b5" filter="url(#shadow)" />
+    <rect x="190" y="250" width="30" height="15" rx="3" fill="#e53935" filter="url(#shadow)" />
+    <rect x="280" y="290" width="30" height="15" rx="3" fill="#43a047" filter="url(#shadow)" />
+    <rect x="450" y="380" width="30" height="15" rx="3" fill="#fb8c00" filter="url(#shadow)" />
+    <rect x="550" y="180" width="30" height="15" rx="3" fill="#5e35b1" filter="url(#shadow)" />
+    <rect x="650" y="450" width="30" height="15" rx="3" fill="#1e88e5" filter="url(#shadow)" />
+    
+    <!-- Buses -->
+    <rect x="330" y="195" width="40" height="20" rx="3" fill="#fdd835" filter="url(#shadow)" />
+    <rect x="430" y="485" width="40" height="20" rx="3" fill="#00acc1" filter="url(#shadow)" />
+  </g>
+  
+  <!-- Líneas conectoras entre nodos de IA -->
+  <g id="connections">
+    <path d="M200,200 C300,250 400,300 500,400" stroke="#3366cc" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+    <path d="M500,400 C550,300 580,230 600,200" stroke="#33cc99" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+    <path d="M600,200 C500,250 350,350 300,400" stroke="#ff6600" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+    <path d="M300,400 C250,350 230,250 200,200" stroke="#3366cc" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+  </g>
+  
+  <!-- Cuadro central de IA -->
+  <g id="aiCore" filter="url(#shadow)">
+    <rect x="325" y="225" width="150" height="150" rx="15" fill="#ffffff" />
+    <circle cx="400" cy="280" r="50" fill="#f8f8f8" />
+    <path d="M400,250 L400,310 M370,280 L430,280" stroke="#3366cc" stroke-width="4" stroke-linecap="round" />
+    <path d="M375,255 L425,305 M375,305 L425,255" stroke="#33cc99" stroke-width="4" stroke-linecap="round" />
+    <text x="400" y="350" font-family="Arial" font-size="14" font-weight="bold" fill="#333333" text-anchor="middle">ANÁLISIS IA</text>
+  </g>
+  
+  <!-- Líneas de flujo de datos -->
+  <g id="dataFlow">
+    <circle cx="300" cy="150" r="3" fill="#3366cc" opacity="0.8">
+      <animate attributeName="cx" values="300;350;400" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="150;190;230" dur="3s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="500" cy="150" r="3" fill="#33cc99" opacity="0.8">
+      <animate attributeName="cx" values="500;450;400" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="150;190;230" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="300" cy="400" r="3" fill="#ff6600" opacity="0.8">
+      <animate attributeName="cx" values="300;350;400" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="400;350;330" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="500" cy="400" r="3" fill="#3366cc" opacity="0.8">
+      <animate attributeName="cx" values="500;450;400" dur="3.2s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="400;350;330" dur="3.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Etiquetas -->
+  <g id="labels">
+    <rect x="150" y="150" width="80" height="25" rx="5" fill="white" opacity="0.8" />
+    <text x="190" y="167" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Flujo bajo</text>
+    
+    <rect x="450" y="370" width="80" height="25" rx="5" fill="white" opacity="0.8" />
+    <text x="490" y="387" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Flujo alto</text>
+    
+    <rect x="570" y="180" width="80" height="25" rx="5" fill="white" opacity="0.8" />
+    <text x="610" y="197" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Incidente</text>
+  </g>
+  
+  <!-- Elementos decorativos que representa detección IA -->
+  <g id="aiDetection">
+    <circle cx="500" cy="400" r="50" fill="none" stroke="#33cc99" stroke-width="2" stroke-dasharray="10,5">
+      <animate attributeName="r" values="40;50;40" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="200" cy="200" r="45" fill="none" stroke="#3366cc" stroke-width="2" stroke-dasharray="10,5">
+      <animate attributeName="r" values="45;55;45" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="600" cy="200" r="40" fill="none" stroke="#ff6600" stroke-width="2" stroke-dasharray="10,5">
+      <animate attributeName="r" values="35;45;35" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg> 

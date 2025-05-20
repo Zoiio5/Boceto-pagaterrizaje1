@@ -1,0 +1,159 @@
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3366cc" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#33cc99" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="roadGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#666"/>
+      <stop offset="100%" stop-color="#888"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="500" height="400" rx="10" fill="url(#bgGradient)"/>
+  
+  <!-- Paisaje urbano -->
+  
+  <!-- Silueta de ciudad -->
+  <path d="M0,180 L30,180 L30,165 L45,165 L45,150 L60,150 L60,130 L75,130 L75,150 L90,150 L90,170 L105,170 L105,140 L120,140 L120,160 L135,160
+           L135,130 L150,130 L150,150 L165,150 L165,170 L180,170 L180,155 L195,155 L195,140 L210,140 L210,120 L225,120 L225,160 L240,160
+           L240,130 L255,130 L255,145 L270,145 L270,125 L285,125 L285,140 L300,140 L300,160 L315,160 L315,150 L330,150 L330,120 L345,120
+           L345,140 L360,140 L360,130 L375,130 L375,145 L390,145 L390,135 L405,135 L405,160 L420,160 L420,150 L435,150 L435,170 L450,170
+           L450,140 L465,140 L465,160 L480,160 L480,170 L500,170 L500,220 L0,220 Z" 
+        fill="#333" opacity="0.7"/>
+  
+  <!-- Carretera principal -->
+  <rect x="0" y="220" width="500" height="70" fill="url(#roadGradient)"/>
+  
+  <!-- Líneas de carretera -->
+  <rect x="0" y="253" width="500" height="4" fill="#fff"/>
+  <rect x="10" y="230" width="30" height="3" fill="#fff"/>
+  <rect x="60" y="230" width="30" height="3" fill="#fff"/>
+  <rect x="110" y="230" width="30" height="3" fill="#fff"/>
+  <rect x="160" y="230" width="30" height="3" fill="#fff"/>
+  <rect x="210" y="230" width="30" height="3" fill="#fff"/>
+  <rect x="260" y="230" width="30" height="3" fill="#fff"/>
+  <rect x="310" y="230" width="30" height="3" fill="#fff"/>
+  <rect x="360" y="230" width="30" height="3" fill="#fff"/>
+  <rect x="410" y="230" width="30" height="3" fill="#fff"/>
+  <rect x="460" y="230" width="30" height="3" fill="#fff"/>
+  
+  <rect x="10" y="277" width="30" height="3" fill="#fff"/>
+  <rect x="60" y="277" width="30" height="3" fill="#fff"/>
+  <rect x="110" y="277" width="30" height="3" fill="#fff"/>
+  <rect x="160" y="277" width="30" height="3" fill="#fff"/>
+  <rect x="210" y="277" width="30" height="3" fill="#fff"/>
+  <rect x="260" y="277" width="30" height="3" fill="#fff"/>
+  <rect x="310" y="277" width="30" height="3" fill="#fff"/>
+  <rect x="360" y="277" width="30" height="3" fill="#fff"/>
+  <rect x="410" y="277" width="30" height="3" fill="#fff"/>
+  <rect x="460" y="277" width="30" height="3" fill="#fff"/>
+  
+  <!-- Carriles de carretera -->
+  <rect x="0" y="220" width="500" height="35" fill="url(#roadGradient)" opacity="0.9"/>
+  <rect x="0" y="255" width="500" height="35" fill="url(#roadGradient)" opacity="0.95"/>
+  
+  <!-- Conexión a la app - Smartphone -->
+  <g transform="translate(100, 330)">
+    <rect x="0" y="0" width="70" height="120" rx="10" fill="#333"/>
+    <rect x="5" y="10" width="60" height="100" rx="3" fill="#f8f8f8"/>
+    
+    <!-- Pantalla de la app -->
+    <rect x="10" y="15" width="50" height="85" fill="#e8f4f8"/>
+    
+    <!-- Mapa en la pantalla -->
+    <rect x="10" y="15" width="50" height="45" fill="#e6e6e6"/>
+    <path d="M10,30 L60,30 M35,15 L35,60" stroke="#ccc" stroke-width="1"/>
+    <path d="M20,25 L30,25 M40,40 L50,40" stroke="#ddd" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="35" cy="35" r="5" fill="#3366cc"/>
+    <circle cx="25" cy="45" r="3" fill="#33cc99"/>
+    <circle cx="45" cy="25" r="3" fill="#ff6600"/>
+    
+    <!-- Información en la app -->
+    <rect x="15" y="65" width="40" height="5" fill="#3366cc" rx="1"/>
+    <rect x="15" y="75" width="30" height="4" fill="#666" rx="1"/>
+    <rect x="15" y="83" width="40" height="4" fill="#666" rx="1"/>
+    <rect x="15" y="91" width="20" height="4" fill="#33cc99" rx="1"/>
+    
+    <!-- Botón smartphone -->
+    <circle cx="35" cy="120" r="7" stroke="#555" stroke-width="1" fill="#444"/>
+  </g>
+  
+  <!-- Indicadores de tráfico optimizado -->
+  <!-- Ruta verde indicando camino óptimo -->
+  <path d="M140,330 C160,320 180,310 200,290 C220,270 240,250 250,230 C260,210 270,190 290,185 C310,180 330,185 350,190 C370,195 390,205 410,210" 
+       stroke="#33cc99" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="1,0"/>
+  
+  <!-- Coches en la ruta -->
+  <g transform="translate(200, 290)">
+    <rect x="-8" y="-4" width="16" height="8" rx="2" fill="#3366cc"/>
+    <rect x="-6" y="-3" width="3" height="2" fill="#fff" opacity="0.7"/>
+    <rect x="3" y="-3" width="3" height="2" fill="#fff" opacity="0.7"/>
+  </g>
+  
+  <g transform="translate(250, 230)">
+    <rect x="-8" y="-4" width="16" height="8" rx="2" fill="#3366cc"/>
+    <rect x="-6" y="-3" width="3" height="2" fill="#fff" opacity="0.7"/>
+    <rect x="3" y="-3" width="3" height="2" fill="#fff" opacity="0.7"/>
+  </g>
+  
+  <g transform="translate(350, 190)">
+    <rect x="-8" y="-4" width="16" height="8" rx="2" fill="#3366cc"/>
+    <rect x="-6" y="-3" width="3" height="2" fill="#fff" opacity="0.7"/>
+    <rect x="3" y="-3" width="3" height="2" fill="#fff" opacity="0.7"/>
+  </g>
+  
+  <!-- Semáforos inteligentes -->
+  <g transform="translate(300, 185)">
+    <rect x="-2" y="-15" width="4" height="15" fill="#555"/>
+    <rect x="-5" y="-25" width="10" height="10" rx="2" fill="#444"/>
+    <circle cx="0" cy="-20" r="3" fill="#33cc99"/>
+  </g>
+  
+  <g transform="translate(410, 210)">
+    <rect x="-2" y="-15" width="4" height="15" fill="#555"/>
+    <rect x="-5" y="-25" width="10" height="10" rx="2" fill="#444"/>
+    <circle cx="0" cy="-20" r="3" fill="#33cc99"/>
+  </g>
+  
+  <!-- Persona -->
+  <g transform="translate(100, 330)">
+    <!-- Cabeza -->
+    <circle cx="0" cy="-70" r="10" fill="#f8c291"/>
+    
+    <!-- Cuerpo -->
+    <line x1="0" y1="-60" x2="0" y2="-30" stroke="#3366cc" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Brazos -->
+    <line x1="0" y1="-55" x2="-15" y2="-45" stroke="#3366cc" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-55" x2="15" y2="-45" stroke="#3366cc" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Piernas -->
+    <line x1="0" y1="-30" x2="-10" y2="-10" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-30" x2="10" y2="-10" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Indicadores de beneficio -->
+  
+  <!-- Tiempo: Reloj -->
+  <g transform="translate(420, 100)">
+    <circle cx="0" cy="0" r="25" fill="#fff" stroke="#3366cc" stroke-width="2"/>
+    <circle cx="0" cy="0" r="2" fill="#3366cc"/>
+    <line x1="0" y1="0" x2="0" y2="-15" stroke="#3366cc" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="10" y2="0" stroke="#3366cc" stroke-width="2" stroke-linecap="round"/>
+    <text x="0" y="40" font-family="Arial" font-size="12" font-weight="bold" fill="#3366cc" text-anchor="middle">AHORRO DE TIEMPO</text>
+  </g>
+  
+  <!-- Estrés: Corazón -->
+  <g transform="translate(250, 100)">
+    <path d="M0,20 C-20,-10 -40,20 0,30 C40,20 20,-10 0,20" fill="#ff6677" stroke="#ff3355" stroke-width="2"/>
+    <text x="0" y="50" font-family="Arial" font-size="12" font-weight="bold" fill="#ff3355" text-anchor="middle">MENOS ESTRÉS</text>
+  </g>
+  
+  <!-- Seguridad: Escudo -->
+  <g transform="translate(330, 100)">
+    <path d="M0,-20 L20,0 V25 C20,35 0,40 0,40 C0,40 -20,35 -20,25 V0 Z" fill="#33cc99" stroke="#33aa88" stroke-width="2"/>
+    <text x="0" y="60" font-family="Arial" font-size="12" font-weight="bold" fill="#33cc99" text-anchor="middle">MÁS SEGURIDAD</text>
+  </g>
+</svg> 

@@ -1,0 +1,232 @@
+<section id="inicio" class="hero">
+  <div class="hero-content container">
+    <div class="hero-text">
+      <h1>Análisis inteligente de tránsito con YOLO y DeepSORT</h1>
+      <p>
+        Optimiza la movilidad urbana con nuestra plataforma de análisis de tránsito
+        potenciada por inteligencia artificial. EstudiosIMIV utiliza tecnologías YOLO y DeepSORT
+        para reducir congestiones, minimizar tiempos de espera y crear ciudades más inteligentes.
+      </p>
+      <div class="hero-buttons">
+        <a href="#demo" class="btn-primary">Solicitar Demo</a>
+        <a href="#soluciones" class="btn-secondary">Nuestras Soluciones</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-container">
+        <img src="/traffic-analytics.svg" alt="Traffic AI Analytics Dashboard" />
+        <div class="blobs">
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="stats-banner">
+    <div class="container stats-container">
+      <div class="stat-item">
+        <span class="stat-number">35%</span>
+        <span class="stat-text">Reducción en tiempo de viaje</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">40%</span>
+        <span class="stat-text">Menos congestión vehicular</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">28%</span>
+        <span class="stat-text">Reducción en emisiones</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding-top: 7rem;
+    overflow: hidden;
+    background-color: var(--color-bg);
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    min-height: 80vh;
+    padding-bottom: 2rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    color: var(--color-primary);
+    padding: 0.9rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--color-primary);
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(51, 102, 204, 0.3);
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgba(51, 102, 204, 0.1);
+  }
+  
+  .hero-image {
+    flex: 1;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 8px solid white;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .blobs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(30px);
+  }
+  
+  .blob-1 {
+    width: 300px;
+    height: 300px;
+    top: -10%;
+    right: 10%;
+    background: rgba(51, 102, 204, 0.3);
+  }
+  
+  .blob-2 {
+    width: 250px;
+    height: 250px;
+    bottom: 0;
+    left: 10%;
+    background: rgba(51, 204, 153, 0.3);
+  }
+  
+  .stats-banner {
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    padding: 2rem 0;
+    color: white;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-text {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+      padding-top: 2rem;
+      min-height: auto;
+    }
+    
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+      justify-content: center;
+    }
+    
+    .stats-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+</style> 

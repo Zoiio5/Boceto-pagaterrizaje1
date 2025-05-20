@@ -1,0 +1,199 @@
+<section id="soluciones" class="solutions">
+  <div class="container">
+    <div class="section-header">
+      <h2>Nuestras soluciones inteligentes</h2>
+      <p>Combinamos tecnologías YOLO y DeepSORT para análisis avanzado de video que transforma la movilidad urbana</p>
+    </div>
+    
+    <div class="solutions-grid">
+      <div class="solution-card">
+        <div class="solution-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+          </svg>
+        </div>
+        <h3>Monitoreo en tiempo real</h3>
+        <p>Supervisa el flujo de tráfico en tiempo real con sensores inteligentes y cámaras conectadas. Detecta incidentes, congestiones y patrones anómalos instantáneamente.</p>
+        <a href="#" class="learn-more">Más información <span>&rarr;</span></a>
+      </div>
+      
+      <div class="solution-card">
+        <div class="solution-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+          </svg>
+        </div>
+        <h3>Análisis predictivo</h3>
+        <p>Anticipa patrones de tráfico y congestiones con modelos de aprendizaje automático. Predice el impacto de eventos, clima y horas pico en la movilidad urbana.</p>
+        <a href="#" class="learn-more">Más información <span>&rarr;</span></a>
+      </div>
+      
+      <div class="solution-card">
+        <div class="solution-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+          </svg>
+        </div>
+        <h3>Optimización semafórica</h3>
+        <p>Ajusta automáticamente los ciclos de semáforos basándose en condiciones de tráfico en tiempo real. Reduce tiempos de espera y mejora el flujo vehicular en intersecciones críticas.</p>
+        <a href="#" class="learn-more">Más información <span>&rarr;</span></a>
+      </div>
+      
+      <div class="solution-card">
+        <div class="solution-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+          </svg>
+        </div>
+        <h3>Planificación urbana</h3>
+        <p>Genera informes detallados sobre patrones de movilidad para ayudar a urbanistas y funcionarios a tomar decisiones basadas en datos para mejorar la infraestructura vial.</p>
+        <a href="#" class="learn-more">Más información <span>&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .solutions {
+    padding: 6rem 0;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-header h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  .section-header p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .solution-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eaeaea;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .solution-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .solution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(51, 102, 204, 0.1);
+  }
+  
+  .solution-card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .solution-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(51, 102, 204, 0.1), rgba(51, 204, 153, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+  
+  .solution-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .solution-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+  }
+  
+  .solution-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .learn-more {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .learn-more span {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .learn-more:hover span {
+    transform: translateX(5px);
+  }
+  
+  @media (max-width: 768px) {
+    .solutions {
+      padding: 4rem 0;
+    }
+    
+    .section-header h2 {
+      font-size: 2rem;
+    }
+    
+    .solutions-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style> 

@@ -1,0 +1,101 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo del dashboard -->
+  <rect x="0" y="0" width="800" height="600" rx="20" fill="#f8f9fa" />
+  
+  <!-- Panel superior -->
+  <rect x="40" y="40" width="720" height="100" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" />
+  
+  <!-- Tarjetas métricas superiores -->
+  <rect x="60" y="60" width="150" height="60" rx="8" fill="#3366cc" />
+  <text x="135" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Flujo de Tráfico</text>
+  <text x="135" y="105" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">+24%</text>
+  
+  <rect x="230" y="60" width="150" height="60" rx="8" fill="#33cc99" />
+  <text x="305" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Congestión</text>
+  <text x="305" y="105" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">-18%</text>
+  
+  <rect x="400" y="60" width="150" height="60" rx="8" fill="#5c6bc0" />
+  <text x="475" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Tiempo de Viaje</text>
+  <text x="475" y="105" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">12.5 min</text>
+  
+  <rect x="570" y="60" width="150" height="60" rx="8" fill="#ff6600" />
+  <text x="645" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Incidentes</text>
+  <text x="645" y="105" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">3 activos</text>
+  
+  <!-- Panel del mapa con flujo de tráfico -->
+  <rect x="40" y="160" width="450" height="400" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" />
+  <text x="60" y="190" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Mapa de Flujo en Tiempo Real</text>
+  
+  <!-- Mapa simplificado -->
+  <rect x="60" y="210" width="410" height="330" rx="5" fill="#f0f0f0" />
+  
+  <!-- Calles del mapa -->
+  <path d="M60 375 H470 M265 210 V540" stroke="#cccccc" stroke-width="15" />
+  <path d="M60 375 H470 M265 210 V540" stroke="#ffffff" stroke-width="10" />
+  <path d="M60 300 H470 M190 210 V540 M340 210 V540 M60 450 H470" stroke="#cccccc" stroke-width="8" />
+  <path d="M60 300 H470 M190 210 V540 M340 210 V540 M60 450 H470" stroke="#ffffff" stroke-width="5" />
+  
+  <!-- Puntos de flujo de tráfico -->
+  <circle cx="190" cy="300" r="8" fill="#ff6600" opacity="0.8" />
+  <circle cx="265" cy="300" r="8" fill="#ff6600" opacity="0.8" />
+  <circle cx="340" cy="300" r="8" fill="#ff6600" opacity="0.8" />
+  
+  <circle cx="190" cy="375" r="8" fill="#33cc99" opacity="0.8" />
+  <circle cx="265" cy="375" r="8" fill="#3366cc" opacity="0.8" />
+  <circle cx="340" cy="375" r="8" fill="#33cc99" opacity="0.8" />
+  
+  <circle cx="190" cy="450" r="8" fill="#3366cc" opacity="0.8" />
+  <circle cx="265" cy="450" r="8" fill="#33cc99" opacity="0.8" />
+  <circle cx="340" cy="450" r="8" fill="#3366cc" opacity="0.8" />
+  
+  <!-- Líneas de flujo -->
+  <path d="M190 300 C220 300, 235 340, 265 375" stroke="#ff6600" stroke-width="3" fill="none" stroke-dasharray="4,2" />
+  <path d="M340 450 C310 420, 290 400, 265 375" stroke="#3366cc" stroke-width="3" fill="none" stroke-dasharray="4,2" />
+  
+  <!-- Panel de análisis -->
+  <rect x="510" y="160" width="250" height="190" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" />
+  <text x="530" y="190" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Análisis Predictivo</text>
+  
+  <!-- Gráfico de líneas -->
+  <polyline points="530,280 550,260 570,270 590,250 610,230 630,240 650,220 670,210 690,230 710,200 730,210" stroke="#3366cc" stroke-width="3" fill="none" />
+  <polyline points="530,290 550,300 570,280 590,290 610,270 630,280 650,250 670,260 690,250 710,230 730,240" stroke="#33cc99" stroke-width="3" fill="none" />
+  
+  <text x="530" y="320" font-family="Arial" font-size="12" fill="#666666">08:00</text>
+  <text x="580" y="320" font-family="Arial" font-size="12" fill="#666666">12:00</text>
+  <text x="630" y="320" font-family="Arial" font-size="12" fill="#666666">16:00</text>
+  <text x="680" y="320" font-family="Arial" font-size="12" fill="#666666">20:00</text>
+  
+  <!-- Panel de alertas -->
+  <rect x="510" y="370" width="250" height="190" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" />
+  <text x="530" y="400" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Alertas Recientes</text>
+  
+  <!-- Alertas -->
+  <rect x="530" y="420" width="210" height="40" rx="5" fill="#fff0f0" />
+  <circle cx="545" cy="440" r="7" fill="#ff6600" />
+  <text x="565" y="435" font-family="Arial" font-size="12" font-weight="bold" fill="#333333">Congestión en Av. Principal</text>
+  <text x="565" y="450" font-family="Arial" font-size="10" fill="#666666">Hace 10 minutos</text>
+  
+  <rect x="530" y="470" width="210" height="40" rx="5" fill="#f0f8ff" />
+  <circle cx="545" cy="490" r="7" fill="#3366cc" />
+  <text x="565" y="485" font-family="Arial" font-size="12" font-weight="bold" fill="#333333">Obras en Calle Norte</text>
+  <text x="565" y="500" font-family="Arial" font-size="10" fill="#666666">Hace 35 minutos</text>
+  
+  <rect x="530" y="520" width="210" height="25" rx="5" fill="#f0fff8" />
+  <circle cx="545" cy="533" r="7" fill="#33cc99" />
+  <text x="565" y="535" font-family="Arial" font-size="12" font-weight="bold" fill="#333333">Tráfico normalizado en Centro</text>
+  
+  <!-- Elementos de IA -->
+  <circle cx="380" cy="300" r="25" fill="#3366cc" opacity="0.2" />
+  <circle cx="380" cy="300" r="15" fill="#3366cc" opacity="0.3" />
+  <text x="380" y="305" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">IA</text>
+
+  <!-- Burbujas de datos -->
+  <circle cx="115" cy="350" r="10" fill="#33cc99" opacity="0.6" />
+  <circle cx="130" cy="320" r="8" fill="#3366cc" opacity="0.6" />
+  <circle cx="145" cy="355" r="6" fill="#ff6600" opacity="0.6" />
+  <circle cx="150" cy="330" r="5" fill="#33cc99" opacity="0.6" />
+  <circle cx="420" cy="460" r="10" fill="#33cc99" opacity="0.6" />
+  <circle cx="405" cy="480" r="8" fill="#3366cc" opacity="0.6" />
+  <circle cx="425" cy="490" r="6" fill="#ff6600" opacity="0.6" />
+  <circle cx="410" cy="470" r="5" fill="#33cc99" opacity="0.6" />
+</svg> 
